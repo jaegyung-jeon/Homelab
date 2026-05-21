@@ -1,0 +1,6 @@
+touch -r abc.txt efg.txt
+touch -d "2026-05-19 19:15:25" filename
+
+ls -a : hidden
+ls -l : with detail
+
