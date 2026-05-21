@@ -41,5 +41,11 @@
  ![IIS Test](03screenshots/10.png)
 
 
+4. client  _(compnay.local domain joined)_
+
+![IIS Test](03screenshots/12.png)
 
 
+5. DC02 backup domain controller _(compnay.local domain joined)_
+
+![IIS Test](03screenshots/13.png)
