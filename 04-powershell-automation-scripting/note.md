@@ -3,6 +3,7 @@ for loop vs while loop
 >>>>for loop : for ($i= ; $i -condtion; $i++/--) {
     Write-Host "blahblahblah"
 }
+
 >>>>while loop : $i= declaire
 >>>>             while($i -condition) {
                     Write-host ""
@@ -14,3 +15,23 @@ for each : looping among the list
                   foreach ($individual in $list) {
                     write-host "list:$individual"
                   }
+
+function
+>funciton name {
+    param (
+        [int]$a,
+        [int]$b
+    )
+    return $a + $b
+
+}
+$result = name -a number -b number
+write-host "result:$result"
+
+### pipelines
+>- Where-Object : filtering data
+>- Sort-Object  : arranging data
+>- Select-Object: reshaping data
+>- Export-Csv   : exporting data to csv file
+
+
