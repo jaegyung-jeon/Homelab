@@ -81,3 +81,12 @@ configure 2 ports to WAN/LAN
 
 LAN-STATIC IP ADDRESS ; because it is supposed to be switch connected device's gateway</br>
 WAN-DHCP ASSIGNED ADDRESS ; client side of ISP router
+
+## 4. DHCP CONFIGURATION
+
+![IIS Test](03screenshots/20.png)
+
+!!! But for the better SSH linux server on pc02, I will set pc02 ip address to DHCP reserved IP !!!
+
+
+![IIS Test](03screenshots/21.png)
