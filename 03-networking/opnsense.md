@@ -90,3 +90,38 @@ WAN-DHCP ASSIGNED ADDRESS ; client side of ISP router
 
 
 ![IIS Test](03screenshots/21.png)
+
+
+## 5. Firewall Rule Setup
++ Block Ping (block ICMP)
+![IIS Test](03screenshots/22.png)
+
++ Make sure to move the rule on the top 
+![IIS Test](03screenshots/23.png)
+
++ ping google.com test => Request timed out.
+
+## 6. Allow DNS only
+
+For this rule, We need two set of rules. One for Allowing DNS rule, and other for Blocking Everything Else
+
++ Allow DNS<br>
+
+action : pass<br>
+protocol : TCP/UDP<br>
+source : target pc ip address <pc03 windows 11 client><br>
+destination : any<br>
+port : 53(DNS)<br>
+
+![IIS Test](03screenshots/24.png)
+
+
++ Block Everything <br>
+
+action : block<br>
+protocol : any<br>
+source : target pc ip address <pc03 windows 11 client><br>
+destination : any<br>
+
+![IIS Test](03screenshots/25.png)
+
