@@ -125,3 +125,42 @@ destination : any<br>
 
 ![IIS Test](03screenshots/25.png)
 
+## 7. VLAN setup
+
+1. create a new BRIDGE<br>
+
+![IIS Test](03screenshots/26.png)
+
+*vmbr  = Virtual Machine Bridge
+
+*vmbr0 = port connected from port1 on PC3 to ISP router 
+
+*vmbr1 = port connected from port1 on PC3 to ISP router (WAN) 
+
+*vmbr2 = port connected from port1 on PC3 to switch (LAN)
+
+!!!vmbr3 = new bridge for VLAN setup!!!
+
+
+2. add a new Network Device (Proxmox - Hardware - add network device)<br>
+
+![IIS Test](03screenshots/28.png)
+
+
+
+3. configure new IPv4 for VLAN (OPNsense - Interfaces - Assignments)<br>
+
+![IIS Test](03screenshots/27.png)
+
+*Prefix 8 > 255.0.0.0
+
+*Prefix 16 > 255.255.0.0
+
+*Prefix 24 > 255.255.255.0
+
+*Prefix 32 > 255.255.255.255
+
+
+4. DHCP configuration for VLAN (OPNSENSE - Services - Kea DHCP -kEA DHCPV4)</br>
+
+![IIS Test](03screenshots/29.png)
